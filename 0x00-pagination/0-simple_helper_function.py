@@ -6,8 +6,7 @@ Simple helper function
 
 def index_range(page: int, page_size: int) -> tuple:
     """
-    function that takes two integer arguments page and page_size.
-    return a tuple of size two containing a start index and an end index.
+    function that calculates the start and an end index for pagination.
     """
 
     if page == 1:
