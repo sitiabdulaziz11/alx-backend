@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ Flask App Module"""
 
-from flask import Flask
+from flask import Flask, render_template
 from flask_babel import Babel
 
 app = Flask(__name__)
@@ -17,7 +17,7 @@ class Config(object):
     app.config.from_object(Config)
 
 
-@app.route("/")
+@app.route('/')
 def index():
     """ Index Page """
     return render_template("1-index.html")
