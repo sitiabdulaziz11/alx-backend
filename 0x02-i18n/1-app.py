@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Flask App """
+""" Flask App Module"""
 
 from flask import Flask
 from flask_babel import Babel
