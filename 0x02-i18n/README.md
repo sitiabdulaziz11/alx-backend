@@ -1,6 +1,6 @@
 <h1>0x02. i18n Project<h1>
 
-<p>For more information, see <a href="https://github.com/learn-co-curriculum/0x02-i18n">0x02-i18n</a></p>
+<p>For more information, see <a href="https://docs.google.com/document/d/10Jor7i7qqhiDvEaWRbDpUeNu2ONeB2lzd_5ZDyYvxJE/edit?usp=sharing">0x02-i18n</a></p>
 
 <h2>Learning Objectives</h2>
 
