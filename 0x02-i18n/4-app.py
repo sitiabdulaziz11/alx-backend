@@ -13,6 +13,9 @@ babel = Babel(app)
 @babel.localeselector
 def get_locale():
     """ Function that determining the user's preferred language and local"""
+    local = request.args.get('locale')
+    if local and local in app.config['LANGUAGES']:
+        return local
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
@@ -20,7 +23,7 @@ def get_locale():
 def index():
     """ Function that returns the index.html template """
     locale_user = get_locale()
-    return render_template('2-index.html', user_local=locale_user)
+    return render_template('4-index.html', user_local=locale_user)
 
 
 if __name__ == "__main__":
