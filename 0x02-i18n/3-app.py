@@ -5,7 +5,7 @@ from flask import Flask, render_template, request
 from flask_babel import Babel
 
 app = Flask(__name__)
-app.config['LANGUAGES'] = ['en', 'fr']
+app.config.from_object['LANGUAGES'] = ['en', 'fr']
 
 babel = Babel(app)
 
