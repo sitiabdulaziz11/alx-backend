@@ -21,7 +21,7 @@ babel.init_app(app)
 
 @app.route('/')
 def index():
-    """ Index Page """
+    """ Index Page Method"""
     return render_template("1-index.html")
 
 
