@@ -2,12 +2,15 @@
 """ Python script that starts a Flask web application """
 
 from flask import Flask, render_template, request
+from flask_babel import Babel
 
 app = Flask(__name__)
-
 app.config['LANGUAGES'] = ['en', 'fr']
 
+babel = Babel(app)
 
+
+@babel.localeselector
 def get_locale():
     """ Function that determining the user's preferred language and local"""
 
